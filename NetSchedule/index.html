@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="row">
+					<div class="col-8">
+						<div class="filter-wrapper">
+							<input type="checkbox" class="filter-checkbox" value="Software Engineer"/> Software Engineer
+							<input type="checkbox" class="filter-checkbox" value="Accountant"/>  Accountant
+							<input type="checkbox" class="filter-checkbox" value="Sales Assistant"/>  Sales Assistant
+							<input type="checkbox" class="filter-checkbox" value="Developer"/>  Developer
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="btn-group submitter-group float-right">
+							<div class="input-group-prepend">
+								<div class="input-group-text">Date</div>
+							</div>
+                            <input type="date" id="schedule_date" name="schedule_date">
+						</div>
+					</div>
+				</div>
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+                        <th>Sr. No</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Price</th>
+					</tr>
+				</thead>
+				<tbody id="schedule" > 
+
+                </tbody>
+			
+            </table>
+            <div id="pager">
+                <ul id="pagination" class="pagination-sm"></ul>
+            </div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+        <script src="jquery.twbsPagination.min.js"></script>
+        <script src="index.js"></script>
+
+	</body>
+</html>

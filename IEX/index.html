@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<form>
+					<div class="row">
+						<div class="col-8">
+							<div class="filter-wrapper">
+								<button class="input-group-text" id="checkAll">Check All</button>
+								<hr />
+								<input type="checkbox" class="filter-checkbox" name="A1" value="A1"/> A1
+								<input type="checkbox" class="filter-checkbox" name="A2" value="A2"/> A2
+								<input type="checkbox" class="filter-checkbox" name="E1" value="E1"/> E1
+								<input type="checkbox" class="filter-checkbox" name="E2" value="E2"/> E2
+								<input type="checkbox" class="filter-checkbox" name="N1" value="N1"/> N1
+								<input type="checkbox" class="filter-checkbox" name="N2" value="N2"/> N2
+								<input type="checkbox" class="filter-checkbox" name="N3" value="N3"/> N3
+								<input type="checkbox" class="filter-checkbox" name="S1" value="S1"/> S1
+								<input type="checkbox" class="filter-checkbox" name="S2" value="S2"/> S2
+								<input type="checkbox" class="filter-checkbox" name="S3" value="S3"/> S3<br>
+								<input type="checkbox" class="filter-checkbox" name="W1" value="W1"/> W1
+								<input type="checkbox" class="filter-checkbox" name="W2" value="W2"/> W2
+								<input type="checkbox" class="filter-checkbox" name="W3" value="W3"/> W3
+								<input type="checkbox" class="filter-checkbox" name="MCP" value="MCP"/> MCP
+
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="btn-group submitter-group float-right">
+								<div class="input-group-prepend">
+									<div class="input-group-text">Date</div>
+								</div>
+								<input type="date" id="schedule_date" name="schedule_date">
+								<div class="input-group-prepend">
+									<input type="button" id="save_value" class="input-group-text" name="save_value" value="Get" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+			<table class="table">
+				<thead>
+					<tr id="thead_tr">
+                        <th>Sr. No</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        
+					</tr>
+				</thead>
+				<tbody id="schedule" > 
+
+                </tbody>
+			
+            </table>
+            <div id="pager">
+                <ul id="pagination" class="pagination-sm"></ul>
+            </div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+        <script src="jquery.twbsPagination.min.js"></script>
+        <script src="index.js"></script>
+
+	</body>
+</html>
